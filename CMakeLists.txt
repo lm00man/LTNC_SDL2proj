@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.29)
+project(untitled2)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake_modules)
+set(SDL2_PATH "D:/SDL2-2.30.12/x86_64-w64-mingw32")
+FIND_PACKAGE(SDL2 REQUIRED)
+INCLUDE_DIRECTORIES(${SDL2_INCLUDE_DIR})
+add_executable(untitled2 main.cpp)
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${SDL2_LIBRARY})
