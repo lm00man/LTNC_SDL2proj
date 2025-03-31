@@ -1,3 +1,7 @@
 # ninja log v6
-1	2077	7606930568463951	CMakeFiles/untitled2.dir/main.cpp.obj	b9e27cf10ad039ea
-4	95	7606931219667611	untitled2.exe	ba65a3463097ad3d
+5	1117	7649690207287990	CMakeFiles/untitled2.dir/src/textureManager.cpp.obj	c5a6305814932116
+1118	3065	7649690218403666	untitled2.exe	aa9b2a28e10d4523
+6	1347	7649689829432449	CMakeFiles/untitled2.dir/src/game.cpp.obj	fb1415474bd3fbec
+9	1041	7649689829472343	CMakeFiles/untitled2.dir/src/main.cpp.obj	8c23bc3463a5759d
+2	13	7649689795193470	clean	2d5ff69eaa416df
+10	1042	7649689829482309	CMakeFiles/untitled2.dir/src/gameObject.cpp.obj	9abe37446542f87a
