@@ -1,3 +1,3 @@
-C:/Users/Windows/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/untitled2.dir
-C:/Users/Windows/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Windows/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/cmake-build-debug/CMakeFiles/LTNC_SDL2proj.dir
+C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/cmake-build-debug/CMakeFiles/rebuild_cache.dir
