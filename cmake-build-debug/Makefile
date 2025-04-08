@@ -128,29 +128,29 @@ LTNC_SDL2proj/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LTNC_SDL2proj.dir\build.make CMakeFiles/LTNC_SDL2proj.dir/build
 .PHONY : LTNC_SDL2proj/fast
 
-src/Map.obj: src/Map.cpp.obj
-.PHONY : src/Map.obj
+src/Grid.obj: src/Grid.cpp.obj
+.PHONY : src/Grid.obj
 
 # target to build an object file
-src/Map.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LTNC_SDL2proj.dir\build.make CMakeFiles/LTNC_SDL2proj.dir/src/Map.cpp.obj
-.PHONY : src/Map.cpp.obj
+src/Grid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LTNC_SDL2proj.dir\build.make CMakeFiles/LTNC_SDL2proj.dir/src/Grid.cpp.obj
+.PHONY : src/Grid.cpp.obj
 
-src/Map.i: src/Map.cpp.i
-.PHONY : src/Map.i
+src/Grid.i: src/Grid.cpp.i
+.PHONY : src/Grid.i
 
 # target to preprocess a source file
-src/Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LTNC_SDL2proj.dir\build.make CMakeFiles/LTNC_SDL2proj.dir/src/Map.cpp.i
-.PHONY : src/Map.cpp.i
+src/Grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LTNC_SDL2proj.dir\build.make CMakeFiles/LTNC_SDL2proj.dir/src/Grid.cpp.i
+.PHONY : src/Grid.cpp.i
 
-src/Map.s: src/Map.cpp.s
-.PHONY : src/Map.s
+src/Grid.s: src/Grid.cpp.s
+.PHONY : src/Grid.s
 
 # target to generate assembly for a file
-src/Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LTNC_SDL2proj.dir\build.make CMakeFiles/LTNC_SDL2proj.dir/src/Map.cpp.s
-.PHONY : src/Map.cpp.s
+src/Grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LTNC_SDL2proj.dir\build.make CMakeFiles/LTNC_SDL2proj.dir/src/Grid.cpp.s
+.PHONY : src/Grid.cpp.s
 
 src/game.obj: src/game.cpp.obj
 .PHONY : src/game.obj
@@ -257,9 +257,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... LTNC_SDL2proj
-	@echo ... src/Map.obj
-	@echo ... src/Map.i
-	@echo ... src/Map.s
+	@echo ... src/Grid.obj
+	@echo ... src/Grid.i
+	@echo ... src/Grid.s
 	@echo ... src/game.obj
 	@echo ... src/game.i
 	@echo ... src/game.s

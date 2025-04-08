@@ -2,18 +2,18 @@
 #include"game.h"
 #include"textureManager.h"
 #include"Gameobject.h"
+#include"Grid.h"
 
-#include <cstdio>
 #include<iostream>
 
 Game::Game(){};
 Game::~Game(){};
 
-GameObject* player;
-
+player* player = nullptr;
+Grid* pGrid = nullptr;
 SDL_Renderer Game::*renderer = nullptr;
-
-int count = 0;
+constexpr int width = 1024;
+constexpr int height = 768;
 
 void Game::init(const char *title, int xpos, int ypos,int width, int height, bool show) {
     window = nullptr;
@@ -46,14 +46,16 @@ void Game::init(const char *title, int xpos, int ypos,int width, int height, boo
         std::cerr<<"SDL_Init ERROR"<<SDL_GetError()<<std::endl;
         isRunning = false;
     }
-    player = new GameObject("assets/Sprite-0001.png",32,32);
+    player = new class player("assets/Sprite-0001.png",32,32);
+    pGrid = new class Grid("assets/temp_square.png", 32,32);
 }
 void Game::update() {
-    player->Game_obj_update();
+    player->update();
 }
 void Game::render() {
     SDL_RenderClear(renderer);
-    player->Game_obj_render();
+    player->render();
+    pGrid -> render(renderer,width,height,4,64,Grid::spacing);
     SDL_RenderPresent(renderer);
 }
 void Game::handleEvent() {

@@ -13,9 +13,10 @@ add_executable(LTNC_SDL2proj src/game.cpp
         src/main.cpp
         include/Gameobject.h
         src/gameObject.cpp
-        include/Map.h
-        src/Map.cpp
-        src/main.cpp)
+        src/main.cpp
+        include/Grid.h
+        src/Grid.cpp
+)
 target_link_libraries(LTNC_SDL2proj
         PRIVATE
         $<TARGET_NAME_IF_EXISTS:SDL2::SDL2main>

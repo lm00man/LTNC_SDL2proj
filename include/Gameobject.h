@@ -5,16 +5,20 @@
 #include"game.h"
 class GameObject {
 public:
-    GameObject(const char* texsheet,int x,int y);
-    ~GameObject();
-    void Game_obj_render();
-    void Game_obj_update();
-
-private:
-    int xpos, ypos;
-    SDL_Texture* objTexture;
-    SDL_Rect srcRect, dstRect;
-
+    virtual ~GameObject() {} ;
+    void virtual render() {};
+};
+class player : public GameObject {
+    public:
+    player(char const* textsheet,int x,int y) ;
+    ~player() =default;
+    void Input_handling(SDL_Event e);
+    void render() override;
+    void update();
+    private:
+    SDL_Texture* playerTexture;
+    int player_x, player_y;
+    SDL_Rect dstRect = {player_x,player_y,64,64};
 };
 
 #endif //GAMEOBJECT_H
