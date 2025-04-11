@@ -315,6 +315,36 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/SDL2_ttf/SDL2_ttfConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/SDL2_ttf/SDL2_ttfConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/FeatureSummary.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.2.1/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/SDL2_ttf/SDL2_ttf-shared-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/SDL2_ttf/SDL2_ttf-shared-targets-debug.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/SDL2_ttf/SDL2_ttf-shared-targets-release.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

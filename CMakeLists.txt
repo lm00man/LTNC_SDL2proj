@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 find_package(SDL2 CONFIG REQUIRED)
 find_package(SDL2_image CONFIG REQUIRED)
 find_package(PNG REQUIRED)
+find_package(SDL2_ttf CONFIG REQUIRED)
 
 add_executable(LTNC_SDL2proj src/game.cpp
         src/game.cpp
@@ -26,6 +27,10 @@ target_link_libraries(LTNC_SDL2proj PRIVATE
         $<IF:$<TARGET_EXISTS:SDL2_image::SDL2_image>,
         SDL2_image::SDL2_image,
         SDL2_image::SDL2_image-static>)
+
+target_link_libraries(LTNC_SDL2proj PRIVATE $<IF:$<TARGET_EXISTS:SDL2_ttf::SDL2_ttf>,
+        SDL2_ttf::SDL2_ttf,
+        SDL2_ttf::SDL2_ttf-static>)
 
 target_link_libraries(LTNC_SDL2proj PRIVATE PNG::PNG)
 

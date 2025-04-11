@@ -42,7 +42,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 9,
+				"line" : 10,
 				"parent" : 0
 			},
 			{
@@ -54,19 +54,25 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 20,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 25,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 30,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 35,
 				"parent" : 0
 			},
 			{
@@ -79,27 +85,27 @@
 				"command" : 5,
 				"file" : 0,
 				"line" : 893,
-				"parent" : 6
+				"parent" : 7
 			},
 			{
 				"file" : 3,
-				"parent" : 7
+				"parent" : 8
 			},
 			{
 				"command" : 4,
 				"file" : 3,
 				"line" : 49,
-				"parent" : 8
+				"parent" : 9
 			},
 			{
 				"file" : 2,
-				"parent" : 9
+				"parent" : 10
 			},
 			{
 				"command" : 3,
 				"file" : 2,
 				"line" : 60,
-				"parent" : 10
+				"parent" : 11
 			},
 			{
 				"command" : 6,
@@ -111,54 +117,54 @@
 				"command" : 5,
 				"file" : 0,
 				"line" : 893,
-				"parent" : 12
+				"parent" : 13
 			},
 			{
 				"file" : 7,
-				"parent" : 13
+				"parent" : 14
 			},
 			{
 				"command" : 7,
 				"file" : 7,
 				"line" : 68,
-				"parent" : 14
+				"parent" : 15
 			},
 			{
 				"command" : 6,
 				"file" : 6,
 				"line" : 76,
-				"parent" : 15
+				"parent" : 16
 			},
 			{
 				"command" : 4,
 				"file" : 0,
 				"line" : 847,
-				"parent" : 16
+				"parent" : 17
 			},
 			{
 				"file" : 5,
-				"parent" : 17
+				"parent" : 18
 			},
 			{
 				"command" : 5,
 				"file" : 5,
 				"line" : 3,
-				"parent" : 18
+				"parent" : 19
 			},
 			{
 				"file" : 4,
-				"parent" : 19
+				"parent" : 20
 			},
 			{
 				"command" : 3,
 				"file" : 4,
 				"line" : 134,
-				"parent" : 20
+				"parent" : 21
 			},
 			{
 				"command" : 8,
 				"file" : 1,
-				"line" : 32,
+				"line" : 37,
 				"parent" : 0
 			}
 		]
@@ -175,7 +181,7 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 22,
+					"backtrace" : 23,
 					"path" : "C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/include"
 				},
 				{
@@ -233,16 +239,21 @@
 			},
 			{
 				"backtrace" : 5,
+				"fragment" : "C:\\Users\\nyh21\\.vcpkg-clion\\vcpkg\\installed\\x64-mingw-dynamic\\debug\\lib\\libSDL2_ttfd.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
 				"fragment" : "C:\\Users\\nyh21\\.vcpkg-clion\\vcpkg\\installed\\x64-mingw-dynamic\\debug\\lib\\libpng16d.dll.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 11,
+				"backtrace" : 12,
 				"fragment" : "-lshell32",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 11,
+				"backtrace" : 12,
 				"fragment" : "-Wl,--undefined=WinMain",
 				"role" : "libraries"
 			},
@@ -252,7 +263,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 21,
+				"backtrace" : 22,
 				"fragment" : "C:\\Users\\nyh21\\.vcpkg-clion\\vcpkg\\installed\\x64-mingw-dynamic\\debug\\lib\\libzlibd.dll.a",
 				"role" : "libraries"
 			},

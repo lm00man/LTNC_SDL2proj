@@ -266,6 +266,9 @@ SDL2_DIR:PATH=C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/shar
 //The directory containing a CMake configuration file for SDL2_image.
 SDL2_image_DIR:PATH=C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/SDL2_image
 
+//The directory containing a CMake configuration file for SDL2_ttf.
+SDL2_ttf_DIR:PATH=C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/share/SDL2_ttf
+
 //Automatically copy dependencies into the output directory for
 // executables.
 VCPKG_APPLOCAL_DEPS:BOOL=ON

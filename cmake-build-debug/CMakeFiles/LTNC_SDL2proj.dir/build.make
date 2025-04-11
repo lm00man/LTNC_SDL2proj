@@ -162,6 +162,7 @@ LTNC_SDL2proj.exe: CMakeFiles/LTNC_SDL2proj.dir/src/Grid.cpp.obj
 LTNC_SDL2proj.exe: CMakeFiles/LTNC_SDL2proj.dir/build.make
 LTNC_SDL2proj.exe: C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/lib/libSDL2maind.a
 LTNC_SDL2proj.exe: C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/lib/libSDL2_imaged.dll.a
+LTNC_SDL2proj.exe: C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/lib/libSDL2_ttfd.dll.a
 LTNC_SDL2proj.exe: C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/lib/libpng16d.dll.a
 LTNC_SDL2proj.exe: C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/lib/libSDL2d.dll.a
 LTNC_SDL2proj.exe: C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/debug/lib/libzlibd.dll.a

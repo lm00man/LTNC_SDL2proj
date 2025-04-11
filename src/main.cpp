@@ -5,7 +5,7 @@ Game *game = nullptr;
 
 int main(int argc, char *argv[]) {
     game = new Game();
-    game->init("Game_1", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,1024,768, true);
+    game->init("Game_1",1024,768, true);
     const int fps = 60;
     const int frameDelay = 1000 / fps;
 
