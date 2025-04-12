@@ -198,7 +198,7 @@ CMakeFiles/LTNC_SDL2proj.dir/src/Grid.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/include/textureManager.h \
+ C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/include/TextureManager.h \
  C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/include/game.h \
  C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL.h \
  C:/Users/nyh21/.vcpkg-clion/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_main.h \

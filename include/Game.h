@@ -5,8 +5,6 @@
 #include <SDL_ttf.h>
 #include<bits/stdc++.h>
 
-
-
 struct MenuItem {
     std::string text;
     SDL_Rect rect;
@@ -35,6 +33,9 @@ class Game {
     void createMenu();
     void renderMenu(SDL_Renderer renderer);
     void renderText(const char * string,int x, int y, bool centered,TTF_Font* font,SDL_Renderer* renderer);
+    Uint32 gameStartTime;
+    float difficultyFactor;
+    int score;
     private:
         SDL_Window* window;
         bool isRunning;

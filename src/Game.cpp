@@ -1,20 +1,23 @@
 
-#include"game.h"
-#include"Gameobject.h"
+#include"Game.h"
+#include"GameObject.h"
 #include"Grid.h"
-
+#include"KillTile.h"
 
 #include<iostream>
 
-player* player = nullptr;
+Player* player = nullptr;
 Grid* pGrid = nullptr;
 SDL_Renderer Game::*renderer = nullptr;
 TTF_Font* Game::font = nullptr;
-KillTile* ktile = nullptr;
+TimedRandomTileManager* tileManager = nullptr;
 constexpr int width = 1024;
 constexpr int height = 768;
 Game::Game() :  window(nullptr),state(MENU),selectedItem(0){};
 Game::~Game(){};
+
+
+
 
 bool Game::init(const char *title,int width, int height, bool show) {
     int flags = 0;
@@ -56,9 +59,17 @@ bool Game::init(const char *title,int width, int height, bool show) {
         isRunning = false;
     }
     createMenu();
-    player = new class player("assets/meat_ball.png");
+    player = new class Player("assets/meat_ball.png");
     pGrid = new class Grid("assets/Grid_cell.png");
+    tileManager = new TimedRandomTileManager(renderer, 128, "assets/KillTile.png", 128*4+16*3,128*4+16*3, 1);
+    tileManager->setSpawnInterval(1000, 3000);  // 1-3 seconds between spawns
+    tileManager->setTileLifeTime(2000, 5000);   // 2-5 seconds lifetime
+    tileManager -> setPredeterminedPositions(pGrid->allCellPos);
 
+    score = 0;
+    gameStartTime = SDL_GetTicks();
+    difficultyFactor = 1.0f;
+    isRunning = true;
     return true;
 }
 void Game::createMenu() {
@@ -78,14 +89,33 @@ void Game::createMenu() {
 void Game::update() {
     if(state == PLAYING) {
         player->update();
-        ktile -> createKillTiles(rand() % Grid::rows, rand() % Grid::cols, 3000);
-        ktile -> update();
-        if (KillTile::checkCollision(player::get_xpos(), player::get_ypos())) {
-            std::cout << "Player hit a kill tile!" << std::endl;
-            isRunning = false;
-        }
-    }
+        // Update difficulty based on time
+        Uint32 gameTime = SDL_GetTicks() - gameStartTime;
+        float gameTimeSeconds = gameTime / 1000.0f;
 
+        // Increase difficulty over time (more tiles, shorter intervals)
+        difficultyFactor = 1.0f + gameTimeSeconds / 30.0f; // Increases by 1 every 30 seconds
+
+        // Cap difficulty at 5x
+        if (difficultyFactor > 5.0f) {
+            difficultyFactor = 5.0f;
+        }
+
+        // Update spawn parameters based on difficulty
+        Uint32 minSpawn = static_cast<Uint32>(1000.0f / difficultyFactor);
+        Uint32 maxSpawn = static_cast<Uint32>(3000.0f / difficultyFactor);
+
+        tileManager->setSpawnInterval(minSpawn, maxSpawn);
+
+        // Update tile manager
+        tileManager->update();
+
+        // Check collision with kill tiles
+        if (tileManager->checkCollision(player->dstRect)) {
+            state = MENU;
+        }
+        score = static_cast<int>(gameTimeSeconds);
+    }
 }
 void Game::renderText(const char* text, int x, int y,bool centered,TTF_Font * font, SDL_Renderer* renderer) {
     SDL_Color color = {255, 255, 255};
@@ -122,10 +152,9 @@ void Game::render(){
         }
     }
     else if(state == PLAYING) {
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         player->render();
         pGrid -> render(renderer);
-        ktile ->render(renderer, 128, 128);
+        tileManager->render(renderer);
     };
     SDL_RenderPresent(renderer);
 }

@@ -5,9 +5,7 @@
 class Grid {
     public:
     Grid(const char * textsheet);
-    ~Grid();
-    bool isWalkable(int x, int y);
-    void setWalkable(int x, int y, bool val);
+    ~Grid() = default;
     void render(SDL_Renderer* renderer);
     SDL_Texture *tile;
     int xpos;
@@ -21,5 +19,21 @@ class Grid {
     int totalGridWidth = width * cols + spacing*(cols-1);
     std::vector<std::vector<bool>> map;
     static std::pair<int, int> getCellPos(int row, int col);
+    std::vector<std::pair<int,int>> allCellPos = {{232,104},
+{376,104},
+{520,104},
+{664,104},
+{232,248},
+{376,248},
+{520,248},
+{664,248},
+{376,392},
+{520,392},
+{664,392},
+{232,536},
+{376,536},
+{520,536},
+{664,536}};
+    void fillCell(std::vector<std::pair<int,int>>& arr);
 };
 

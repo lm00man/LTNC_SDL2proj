@@ -4,7 +4,7 @@
 #include<iostream>
 
 SDL_Renderer* Game::renderer = nullptr;
-SDL_Texture *textureManager::LoadTexture(const char *path) {
+SDL_Texture *TextureManager::LoadTexture(const char *path) {
     SDL_Surface *tmpsurface = IMG_Load(path);
     SDL_Texture *texture = SDL_CreateTextureFromSurface(Game::renderer,tmpsurface);
     if(!tmpsurface) {
@@ -13,7 +13,7 @@ SDL_Texture *textureManager::LoadTexture(const char *path) {
     SDL_FreeSurface(tmpsurface);
     return texture;
 }
-SDL_Texture *textureManager::LoadText(const char *path, SDL_Renderer *renderer, TTF_Font *font) {
+SDL_Texture *TextureManager::LoadText(const char *path, SDL_Renderer *renderer, TTF_Font *font) {
     SDL_Color color = {255, 255, 255};
     SDL_Surface *tmpsurface = TTF_RenderText_Blended(font, path,color);
     SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, tmpsurface);

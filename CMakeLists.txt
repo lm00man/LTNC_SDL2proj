@@ -7,16 +7,17 @@ find_package(SDL2_image CONFIG REQUIRED)
 find_package(PNG REQUIRED)
 find_package(SDL2_ttf CONFIG REQUIRED)
 
-add_executable(LTNC_SDL2proj src/game.cpp
-        src/game.cpp
+add_executable(LTNC_SDL2proj src/Game.cpp
         include/textureManager.h
-        src/textureManager.cpp
+        src/TextureManager.cpp
         src/main.cpp
         include/Gameobject.h
-        src/gameObject.cpp
+        src/GameObject.cpp
         src/main.cpp
         include/Grid.h
         src/Grid.cpp
+        include/KillTile.h
+        src/KillTile.cpp
 )
 target_link_libraries(LTNC_SDL2proj
         PRIVATE

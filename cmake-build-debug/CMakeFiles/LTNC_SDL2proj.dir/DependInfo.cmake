@@ -8,11 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/src/Game.cpp" "CMakeFiles/LTNC_SDL2proj.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/LTNC_SDL2proj.dir/src/Game.cpp.obj.d"
+  "C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/src/GameObject.cpp" "CMakeFiles/LTNC_SDL2proj.dir/src/GameObject.cpp.obj" "gcc" "CMakeFiles/LTNC_SDL2proj.dir/src/GameObject.cpp.obj.d"
   "C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/src/Grid.cpp" "CMakeFiles/LTNC_SDL2proj.dir/src/Grid.cpp.obj" "gcc" "CMakeFiles/LTNC_SDL2proj.dir/src/Grid.cpp.obj.d"
-  "C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/src/game.cpp" "CMakeFiles/LTNC_SDL2proj.dir/src/game.cpp.obj" "gcc" "CMakeFiles/LTNC_SDL2proj.dir/src/game.cpp.obj.d"
-  "C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/src/gameObject.cpp" "CMakeFiles/LTNC_SDL2proj.dir/src/gameObject.cpp.obj" "gcc" "CMakeFiles/LTNC_SDL2proj.dir/src/gameObject.cpp.obj.d"
+  "C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/src/KillTile.cpp" "CMakeFiles/LTNC_SDL2proj.dir/src/KillTile.cpp.obj" "gcc" "CMakeFiles/LTNC_SDL2proj.dir/src/KillTile.cpp.obj.d"
+  "C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/src/TextureManager.cpp" "CMakeFiles/LTNC_SDL2proj.dir/src/TextureManager.cpp.obj" "gcc" "CMakeFiles/LTNC_SDL2proj.dir/src/TextureManager.cpp.obj.d"
   "C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/src/main.cpp" "CMakeFiles/LTNC_SDL2proj.dir/src/main.cpp.obj" "gcc" "CMakeFiles/LTNC_SDL2proj.dir/src/main.cpp.obj.d"
-  "C:/Users/nyh21/CLionProjects/LTNC_SDL2proj/src/textureManager.cpp" "CMakeFiles/LTNC_SDL2proj.dir/src/textureManager.cpp.obj" "gcc" "CMakeFiles/LTNC_SDL2proj.dir/src/textureManager.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
